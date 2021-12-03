@@ -12,6 +12,8 @@ import TaskTotal from '@/containers/tasktotal/tasksIndex'
 import AllTask from '@/containers/tasktotal/all/allTask'
 import MonTask from '@/containers/tasktotal/mon/monTask'
 import VideoPage from '@/containers/video/videoIndex'
+// antv
+import HomePage from '@/views/homepage'
 
 Vue.use(Router)
 
@@ -71,6 +73,11 @@ export default new Router({
       path: '/video',
       name: 'VideoPage',
       component: VideoPage
+    },
+    {
+      path: '/home',
+      name: 'HomePage',
+      component: HomePage
     }
   ]
 })

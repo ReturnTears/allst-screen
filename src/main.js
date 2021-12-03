@@ -8,6 +8,9 @@ import Axios from 'axios'
 // element
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+// iview
+import ViewUI from 'view-design';
+import 'view-design/dist/styles/iview.css';
 
 Vue.config.productionTip = false;
 Vue.prototype.$axios = Axios;
@@ -19,6 +22,7 @@ Axios.defaults.baseURL = "http://127.0.0.1:10001";
 Axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 Vue.use(ElementUI);
+Vue.use(ViewUI);
 
 /* eslint-disable no-new */
 new Vue({
