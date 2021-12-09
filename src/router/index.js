@@ -14,6 +14,9 @@ import MonTask from '@/containers/tasktotal/mon/monTask'
 import VideoPage from '@/containers/video/videoIndex'
 // antv
 import HomePage from '@/views/homepage'
+import DemoPage from '@/views/demoPage'
+import Right from '@/containers/demo/eventbus/Right'
+import Left from '@/containers/demo/eventbus/Left'
 
 Vue.use(Router)
 
@@ -78,6 +81,21 @@ export default new Router({
       path: '/home',
       name: 'HomePage',
       component: HomePage
+    },
+    {
+      path: '/demo',
+      name: 'DemoPage',
+      component: DemoPage
+    },
+    {
+      path: '/left',
+      name: 'LeftPage',
+      component: Left
+    },
+    {
+      path: '/right',
+      name: 'RightPage',
+      component: Right
     }
   ]
 })
